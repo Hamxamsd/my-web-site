@@ -12,6 +12,9 @@ function checkPalindrome(string) {
 var string = document.getElementById("txt").innerText;
 // const string = prompt("Enter a string: ");
 function checkMe() {
+    if(string.length < 10){
+        document.write("Your String Length is less than 10 character:  &  ");
+    }
   const value = checkPalindrome(string);
   document.write(value);
 }
