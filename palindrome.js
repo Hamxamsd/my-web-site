@@ -9,6 +9,9 @@ function checkPalindrome(string) {
   return "It is a palindrome";
 }
 
-const string = prompt("Enter a string: ");
-const value = checkPalindrome(string);
-document.write(value);
+var string = document.getElementById("txt").innerText;
+// const string = prompt("Enter a string: ");
+function checkMe() {
+  const value = checkPalindrome(string);
+  document.write(value);
+}
